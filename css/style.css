@@ -1,0 +1,39 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: OpenSans;
+}
+ul {
+    list-style-type: none;
+}
+section {
+    padding: 0 10%;
+}
+section ul  {
+    display: grid;
+    row-gap: 10px;
+}
+section ul li {
+    cursor: pointer;
+}
+section ul span {
+    background-color: lightgray;
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+section ul b {
+    justify-self: end;
+}
+section ul li p {
+    display: none;
+}
+section ul li.active p {
+    padding: 10px;
+    display: block;
+}
